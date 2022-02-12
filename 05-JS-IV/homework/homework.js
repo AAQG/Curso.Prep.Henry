@@ -136,7 +136,7 @@ usuarios[i].esPremium = true}
 return usuarios;
 }
 
-function sumarLikesDeUsuario(usuario) {
+function sumarLikesDeUsuario(usuario) {node
   // "usuario" tiene una propiedad llamada "posts" que es un array
   // "posts" es un array de objetos "post"
   // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)

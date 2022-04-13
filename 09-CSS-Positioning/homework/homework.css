@@ -34,13 +34,32 @@ left: 200px;
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
+#ejercicioCuatro{
+position: fixed;
+top: 0px;
+left: 0px;
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-
+#ejercicioCinco{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 /* Ejercicio 6. */
+#ejercicioCinco{
+    flex-direction: row-reverse;
+}
+
+/*Ejercicio 7.*/
+#ejercicioSiete{
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-around;
+   align-self: flex-start;
+}

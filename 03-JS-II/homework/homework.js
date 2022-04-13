@@ -72,16 +72,16 @@ function colors(color) {
   //Usar el statement Switch.
 switch (color) {
 case 'blue':
-  return 'This is blue';
+  return 'This is ' + color;
   
 case 'red':
-  return'This is red';
+  return'This is ' + color;
   
 case 'green':
-  return 'This is green';
+  return 'This is ' + color;
   
 case 'orange':
-  return 'This is orange';
+  return 'This is ' + color;
   
 default:
   return 'Color not found';
@@ -217,8 +217,8 @@ function doWhile(numero) {
   var a = numero;
   var i = 0;
   do{
-    i = i + 1; //numero de veces que se va a realizar
-    a = a + 5; // suma dependiendo el numero de veces
+    i++; //numero de veces que se va a realizar
+    a+=5; // suma dependiendo el numero de veces
   } 
   
   while (i < 8);

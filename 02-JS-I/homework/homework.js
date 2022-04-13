@@ -1,10 +1,10 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'Hola';
+const nuevaString = 'Hola mundo';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 5;
+const nuevoNum = 152367;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -36,32 +36,25 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-var s= x + y;
-return s;
+return x + y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var res = x - y;
-  return res;
-
+  return x-y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-var m= x*y;
-
-return m;
+return x*y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-var d= x/y;
-
-return d;
+return x/y;
 }
 
 function sonIguales(x, y) {
@@ -70,21 +63,25 @@ function sonIguales(x, y) {
   // Tu código:
 if (x === y ){;
 return true;
-}else { return false; }
+}else {
+  return false; }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-if (str1.length === str2.length) { return true; } else { return false;} 
+if (str1.length === str2.length) {
+   return true; } 
+   else { return false;} 
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-if (num< 90){ return true; }else { return false; }
+if (num<90){ return true;}
+else { return false; }
 }
 
 function mayorQueCincuenta(num) {
@@ -111,7 +108,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-if (num % 2 !== 0){ return true;} else { return false;}
+if (!(num % 2 === 0)){ return true;} else { return false;}
 }
 
 function elevarAlCuadrado(num) {
@@ -148,7 +145,7 @@ return Math.ceil(num);
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-return Math.random();
+return Math.random(0,1);
 }
 
 function esPositivo(numero) {
@@ -158,7 +155,8 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
 if (numero === 0){
 return false 
-}else if (numero>0){return 'Es positivo';} else { return 'Es negativo'} 
+}else if (numero>0){return 'Es positivo';} 
+else { return 'Es negativo'} 
 }
 
 function agregarSimboloExclamacion(str) {
@@ -174,8 +172,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
- var combinacion =  nombre + ' ' + apellido;
- return combinacion;
+ return nombre + ' ' + apellido;
 }
 
 function obtenerSaludo(nombre) {

@@ -150,15 +150,12 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 var contador= 0;
-
 for (i=0; i<arreglo.length; i++){ //RECORRE EL ARRAY
-  if(arreglo[i]>18){ // si un elemento del array se cumple que es mayor a 18 ejecuta un contador
-
-    contador++ // realiza la suma de elementos si cumple el if
-  }
-
+if(arreglo[i]>18){ // si un elemento del array se cumple que es mayor a 18 ejecuta un contador
+contador++ // realiza la suma de elementos si cumple el if
 }
-return contador; // Devuelve la suma total del contador
+}
+return contador; // Devuelve la suma total del contador 
 }
 
 
@@ -187,11 +184,15 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  let num = n.toString()
+  /*let num = n.toString()
   if(num.charAt(0) === "9"){
-    return true
+    return true;
   }
-  return false
+  return false;*/
+if (n.toString()[0]==9){
+  return true;
+}
+else { return false;}
 }
 
 

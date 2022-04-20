@@ -4,8 +4,11 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
-    return nombre[0].toUpperCase() + nombre.slice(1);
-}
+    //return nombre[0].toUpperCase() + nombre.slice(1);
+var array = nombre.split("");
+array[0]= array[0].toUpperCase();
+return array.join("");
+  }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
@@ -27,8 +30,8 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  var sumaTotal = numeros.reduce(function(acc, curr) {
-    return acc + curr;
+  var sumaTotal = numeros.reduce(function(acumulador, elemento) {
+    return acumulador + elemento;
   },0);
   cb(sumaTotal);
 }
@@ -38,35 +41,44 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  for (i = 0; i<array.length; i++){
+ /* for (i = 0; i<array.length; i++){
 
-    cb(array[i]);    
-  }
+    cb(array[i]);    */
+// array.forEach(element) => cb(element);
+array.forEach(function (elemento){
+  cb(elemento)
+})  
 }
+
 
 function map(array, cb) {
   // Crea un nuevo array
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var nuevoArray = array.map(function(el) {
+  /*var nuevoArray = array.map(function(el) {
     return cb(el);
   });
-  return nuevoArray;
+  return nuevoArray;*/
+return array.map(function(element){
+  return cb(element)
+})
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var nuevoArray = [];
+  /*var nuevoArray = [];
   for(let i = 0; i<array.length; i++) {
     if(array[i][0] === "a") {
       nuevoArray.push(array[i])
     }
   }
-  return nuevoArray;
-
+  return nuevoArray;*/
+  return array.filter(function(element){
+    return element[0]==="a";
+  });
 }
 
 // No modificar nada debajo de esta línea

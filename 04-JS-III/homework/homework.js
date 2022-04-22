@@ -217,7 +217,9 @@ function mesesDelAño(meses) {
   array = meses;
   var nuevoArray = [];
   for(let i= 0; i<array.length; i++) {
-    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+    if(array[i] === "Enero" || 
+      array[i] === "Marzo" || 
+      array[i] === "Noviembre") {
       nuevoArray.push(array[i]);
     }
   }
@@ -258,7 +260,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var array = [];
+  /*var array = [];
   var suma = numero;
   for(var i= 0; i<10; i++) {
     suma = suma + 2;
@@ -274,8 +276,21 @@ function breakStatement(numero) {
   else {
       return array;
   }
-
-
+*/
+  var arr=[];
+  var suma=numero;
+  for (var i=0; i<10;i++){
+      suma=suma+2;
+      if(suma === i)break;
+      else{
+          arr.push(suma);
+      }}
+  
+      if (suma<10){
+          return "Se interrumpió la ejecución"
+      }
+       else{ return arr;}
+  
 }
 
 
